@@ -17,9 +17,15 @@ metadata:
 
 ## Hard contract
 
-- Never scrape any content platform with a logged-in session. Xiaohongshu, Douyin,
-  or any other. This caused a real 7-day account ban. Source intel only per the
-  priority list in [references/recon.md](references/recon.md).
+- Self-scraping content platforms is allowed but is the LAST option, and only under
+  the operating discipline in [references/recon.md](references/recon.md)
+  (dedicated throwaway account, randomized intervals, capped volume, stop on any
+  warning signal). Prefer official free sources first — they are free, structured,
+  and carry zero account risk. A previous run with a logged-in main account and
+  fixed 3-second intervals earned a real 7-day ban.
+- When the skill is used by someone other than its owner, never self-scrape with
+  their account. A ban on your own account is a cost you chose; a ban on a
+  colleague's or client's account is an incident.
 - Never hardcode a specific industry in this file or in `references/`. Industry
   knowledge lives only in `industries/*.md`. Hardcoding an industry is a bug.
 - Never let missing information force a fabrication. Zero source material does not
